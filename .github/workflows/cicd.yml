@@ -2,9 +2,9 @@ name: CI/CD for Dockerized Flask App
 
 on: 
    push:
-      branches: [main]
-   pull_requests:
-      branches: [main]
+      branches: [ main ]
+   pull_request:
+      branches: [ main ]
 
 jobs:
    build-and-test:
@@ -56,7 +56,7 @@ jobs:
 
       -  name: Image digest
          run: echo ${{ steps.build-and-publish.outputs.digest }}
-          
+
          
 
 
