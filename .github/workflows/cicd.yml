@@ -8,7 +8,7 @@ on:
 
 jobs:
    docker-build:
-      runs-on: Ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
       -  name: Buld the docker image
       -  uses: actions/checkout@v4
